@@ -1,7 +1,7 @@
 FROM openjdk:8u111
 MAINTAINER laurocesar
 
-LABEL "com.laurocesar"="Lauro Cesar"
+LABEL "com.laurocesar"="Lauro César"
 LABEL version="1.0"
 LABEL description="Ontopia docker with Omnigator \
 www.ontopia.net."
@@ -22,7 +22,6 @@ RUN rm -rf ontopia-5.3.0.zip
 
 WORKDIR ${CATALINA_HOME}
 
-#ENTRYPOINT $CATALINA_HOME/bin/catalina.sh start
 CMD $CATALINA_HOME/bin/catalina.sh run
 
 EXPOSE 8080
