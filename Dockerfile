@@ -8,7 +8,6 @@ www.ontopia.net."
 
 ENV ONTOPIA_HOME /opt/ontopia
 ENV CATALINA_HOME ${ONTOPIA_HOME}/apache-tomcat
-ENV CATALINA_EXEC ${CATALINA_HOME}/bin/catalina.sh
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
@@ -23,4 +22,6 @@ RUN rm -rf ontopia-5.3.0.zip
 
 EXPOSE 8080
 
-ENTRYPOINT ["$CATALINA_EXEC", "start"]
+WORKDIR ${CATALINA_HOME}
+
+ENTRYPOINT ["bin/catalina.sh", "start"]
