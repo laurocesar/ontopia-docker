@@ -9,9 +9,14 @@ Build the image named `omnigator`:
 docker build --rm -t omnigator .
 ```
 
-Run it:
+Created and run the container:
 
 ```bash
 docker run --name omnigator -p 8080:8080 -d omnigator
-docker start omnigator
 ```
+
+Then, to just start the container:
+
+```bash
+docker start omnigator
+``

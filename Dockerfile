@@ -22,6 +22,7 @@ RUN rm -rf ontopia-5.3.0.zip
 
 WORKDIR ${CATALINA_HOME}
 
-ENTRYPOINT $CATALINA_HOME/bin/catalina.sh start
+#ENTRYPOINT $CATALINA_HOME/bin/catalina.sh start
+CMD $CATALINA_HOME/bin/catalina.sh run
 
 EXPOSE 8080
