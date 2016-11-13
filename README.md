@@ -12,6 +12,6 @@ docker build --rm -t omnigator .
 Run it:
 
 ```bash
-docker run --name omnigator -d -p 8080:8080 omnigator
+docker run --name omnigator -p 8080:8080 -d omnigator
 docker start omnigator
 ```
