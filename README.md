@@ -1,13 +1,28 @@
 # ontopia-docker
-Ontopia docker
 
-## Building and Running
+Ontopia docker. Public repository at https://hub.docker.com/r/laurocesar/ontopia/
+
+## Building or Pulling 
+
+### Building from scratch
 
 Build the image named `ontopia`:
 
 ```bash
+mkdir ontopia-docker
+cd ontopia-docker
+
+git clone https://github.com/laurocesar/ontopia-docker.git
 docker build --rm -t ontopia .
 ```
+
+### Pulling from Dockerhub
+
+```bash
+docker pull laurocesar/ontopia
+`` 
+
+## Running
 
 Created and run the container:
 
