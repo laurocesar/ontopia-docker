@@ -20,7 +20,7 @@ docker build --rm -t ontopia .
 
 ```bash
 docker pull laurocesar/ontopia
-`` 
+``` 
 
 ## Running
 
@@ -34,4 +34,4 @@ Then, to just start the container:
 
 ```bash
 docker start ontopia
-``
+```
