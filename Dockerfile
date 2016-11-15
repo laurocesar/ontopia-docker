@@ -17,7 +17,6 @@ RUN wget https://github.com/ontopia/ontopia/releases/download/release-5.3.0/onto
 RUN mkdir -p ${ONTOPIA_HOME}
 RUN unzip ontopia-5.3.0.zip -d ${ONTOPIA_HOME}
 RUN chmod +x ${CATALINA_HOME}/bin/*.sh
-# RUN chmod -R 755 /var/www/ontopia/
 RUN rm -rf ontopia-5.3.0.zip
 
 WORKDIR ${CATALINA_HOME}

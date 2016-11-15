@@ -30,8 +30,26 @@ Created and run the container:
 docker run --name ontopia -p 8080:8080 -d ontopia
 ```
 
-Then, to just start the container:
+If you want to link some local directory on the container, you should use this:
+
+```bash
+docker run --name ontopia -v "$(pwd)":/opt/host -p 8080:8080 -d ontopia
+```
+
+Similarly, you can link a single file to the `topicmaps` directory:
+
+docker run --name ontopia -v "$(pwd)/ontology.xtm":/opt/ontopia/topicmaps/ontology.xtm -p 8080:8080 -d ontopia
+
+## Controlling the container
+
+After a system restart, you can just start the container:
 
 ```bash
 docker start ontopia
+```
+
+Or even stop it:
+
+```bash
+docker stop ontopia
 ```
