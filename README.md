@@ -38,7 +38,9 @@ docker run --name ontopia -v "$(pwd)":/opt/host -p 8080:8080 -d ontopia
 
 Similarly, you can link a single file to the `topicmaps` directory:
 
+```bash
 docker run --name ontopia -v "$(pwd)/ontology.xtm":/opt/ontopia/topicmaps/ontology.xtm -p 8080:8080 -d ontopia
+```
 
 ## Controlling the container
 
